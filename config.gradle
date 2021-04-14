@@ -1,0 +1,42 @@
+//通用gradle配置
+ext{
+    //android配置
+    android = [
+            compileSdkVersion : 30,
+            buildToolsVersion : "30.0.3",
+            applicationId : "com.myapp.meet",
+            minSdkVersion : 19,
+            targetSdkVersion : 30,
+            versionCode : 1,
+           /* major：主版本号，软件重大升级时会修改
+            minor：次版本号，软件加入了新功能时修改
+            maintenance：维护版本，软件修复后增加*/
+            versionName : "1.0",
+            testInstrumentationRunner : "androidx.test.runner.AndroidJUnitRunner",
+            httpclient : 'org.apache.http.legacy'
+    ]
+
+    //依赖配置
+    dependencies = [
+
+            appcompat : 'androidx.appcompat:appcompat:1.2.0',
+            material : 'com.google.android.material:material:1.2.1',
+            constraintlayout : 'androidx.constraintlayout:constraintlayout:2.0.4',
+            junit : 'junit:junit:4.+',
+            ext_junit : 'androidx.test.ext:junit:1.1.2',
+            espresso_core : 'androidx.test.espresso:espresso-core:3.3.0',
+            bmob : 'cn.bmob.android:bmob-sdk:3.7.8',
+            rxjava : "io.reactivex.rxjava2:rxjava:2.2.8",
+            rxandroid : 'io.reactivex.rxjava2:rxandroid:2.1.1',
+            okhttp3 : 'com.squareup.okhttp3:okhttp:3.14.1',
+            okio : 'com.squareup.okio:okio:2.2.2',
+            gson : 'com.google.code.gson:gson:2.8.5'
+
+    ]
+
+    //仓库
+    maven = [
+            bmobUrl : 'https://dl.bintray.com/chaozhouzhang/maven'
+    ]
+
+}
